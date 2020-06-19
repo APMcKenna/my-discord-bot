@@ -1,5 +1,4 @@
 import discord
-import time
 import asyncio
 import os
 from dotenv import load_dotenv
@@ -10,16 +9,12 @@ command_symbol = os.getenv('BOT_COMMAND_SYMBOL')
 
 client = discord.Client()
 
+
 @client.event
 async def on_message(message):
     if message.author == client.user:
         return
 
-
-    await timeout_thread(message)
-
-
-async def timeout_thread(message):
     if message.content.startswith(command_symbol + 'timeout') and message.author.guild_permissions.administrator:
         await call_timeout(message)
 
@@ -29,13 +24,14 @@ async def call_timeout(message):
     nick_name = message_string[1]
     timeout_length = int(message_string[2])
 
-    user_obj = get_member(message.guild, nick_name, message.channel)
+    user_obj = get_member(message.guild, nick_name)
 
-    if(user_obj is not None):
+    if user_obj is not None:
         await message.channel.send('User {0} has been muted for {1} seconds.'.format(nick_name, timeout_length))
         await timeout(user_obj, timeout_length)
     else:
-        await message.channel.send('Could not find an individual user with that nickname/unique id. Please try again using the unique member ID.')
+        await message.channel.send('Could not find an individual user with that nickname/unique id. '
+                                   'Please try again using the unique member ID.')
 
 
 async def timeout(user_obj, timeout_length):
@@ -44,7 +40,7 @@ async def timeout(user_obj, timeout_length):
     await user_obj.edit(mute=False, deafen=False)
 
 
-def get_member(guild, nick_name, channel):
+def get_member(guild, nick_name):
     members_list = guild.members
     matched_members = []
 
