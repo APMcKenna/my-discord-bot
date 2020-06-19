@@ -10,3 +10,11 @@
  - To set the bot command symbol and token you must create a file named ".env" in the same directory as the python file
  - There is a template for that file in this repository
  - Open the template file and copy in your bots token and change the command symbol as required
+
+# Required bot permissions
+ - Manage Roles
+ - View Channels
+ - Send Messages
+ - Manage Messages
+ - Mute Members
+ - Deafen Members
