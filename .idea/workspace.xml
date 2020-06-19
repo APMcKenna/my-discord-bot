@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff6950bb-eb0f-4868-99c8-4ea479fb7d28" name="Default Changelist" comment="Changed constant values to Block Capitals" />
+    <list default="true" id="ff6950bb-eb0f-4868-99c8-4ea479fb7d28" name="Default Changelist" comment="Changed constant values to Block Capitals">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timeout_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/timeout_bot.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +80,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Removed Unused function and made some minor Pep8 changes." />
