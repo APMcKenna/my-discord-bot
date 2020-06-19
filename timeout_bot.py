@@ -4,8 +4,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-bot_token = os.getenv('DISCORD_BOT_TOKEN')
-command_symbol = os.getenv('BOT_COMMAND_SYMBOL')
+BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
+COMMAND_SYMBOL = os.getenv('BOT_COMMAND_SYMBOL')
 
 client = discord.Client()
 
@@ -15,7 +15,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith(command_symbol + 'timeout') and message.author.guild_permissions.administrator:
+    if message.content.startswith(COMMAND_SYMBOL + 'timeout') and message.author.guild_permissions.administrator:
         await call_timeout(message)
 
 
@@ -60,4 +60,4 @@ def get_member(guild, nick_name):
         return matched_members[0]
 
 
-client.run(bot_token)
+client.run(BOT_TOKEN)
