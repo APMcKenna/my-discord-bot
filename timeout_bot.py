@@ -8,22 +8,23 @@ load_dotenv()
 BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
 COMMAND_SYMBOL = os.getenv('BOT_COMMAND_SYMBOL')
 
+
 # Creating the bot object
-client = discord.Client()
+bot = discord.Client()
 
 
-@client.event
+@bot.event
 async def on_message(message):
     """
     Function gets called each time a message is sent in any of the servers text channels
     :param message: The message that triggered the event
     :return: Returns if message was sent by the bot
     """
-    if message.author == client.user:
+    if message.author == bot.user:
         return
 
     # Checks that the timeout command was called by an admin
-    if message.content.startswith(COMMAND_SYMBOL + 'timeout') and message.author.guild_permissions.administrator:
+    if message.author.guild_permissions.administrator and message.content.startswith(COMMAND_SYMBOL + 'timeout'):
         await call_timeout(message)
 
 
@@ -52,9 +53,17 @@ async def timeout(user_obj, timeout_length):
     :param user_obj: The server_member to be timed out
     :param timeout_length: The amount of time in seconds to time out the user for
     """
-    await user_obj.edit(mute=True, deafen=True)
+    await silence_and_deafen(user_obj)
     await asyncio.sleep(timeout_length)
-    await user_obj.edit(mute=False, deafen=False)
+    await unsilence_and_undeafen(user_obj)
+
+
+async def silence_and_deafen(user):
+    await user.edit(mute=True, deafen=True)
+
+
+async def unsilence_and_undeafen(user):
+    await user.edit(mute=False, deafen=False)
 
 
 def get_member(guild, nick_name):
@@ -84,4 +93,4 @@ def get_member(guild, nick_name):
 
 
 # Initializes the bot on the server
-client.run(BOT_TOKEN)
+bot.run(BOT_TOKEN)
