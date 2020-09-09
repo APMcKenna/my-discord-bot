@@ -39,7 +39,11 @@ async def call_timeout(message):
 
     user_obj = get_member(message.guild, nick_name)
 
-    if user_obj is not None:
+    await give_user_response(message, user_obj, nick_name, timeout_length)
+
+
+async def give_user_response(message, user_obj, nick_name, timeout_length):
+    if user_obj:
         await message.channel.send('User {0} has been muted for {1} seconds.'.format(nick_name, timeout_length))
         await timeout(user_obj, timeout_length)
     else:
@@ -86,7 +90,7 @@ def get_member(guild, nick_name):
         unique_id = nick_name
         member_obj = guild.get_member(unique_id)
 
-        if member_obj is not None:
+        if member_obj:
             return matched_members[0]
     else:
         return matched_members[0]
