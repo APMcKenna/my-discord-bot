@@ -4,9 +4,12 @@ import os
 from dotenv import load_dotenv
 
 # Load .env file variables into local machine environment variables
-load_dotenv()
-BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
-COMMAND_SYMBOL = os.getenv('BOT_COMMAND_SYMBOL')
+# load_dotenv()
+# BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
+# COMMAND_SYMBOL = os.getenv('BOT_COMMAND_SYMBOL')
+
+BOT_TOKEN = "Njc4MzA1MTYzMjMyMTQ5NTI2.Xkg26Q.oet0V25HtdPXRGKmEOiBVSUxC7Y"
+COMMAND_SYMBOL = "$"
 
 
 # Creating the bot object
@@ -70,27 +73,27 @@ async def unsilence_and_undeafen(user):
     await user.edit(mute=False, deafen=False)
 
 
-def get_member(guild, nick_name):
+def get_member(guild, given_name):
     """
     Searches the server for a member by nick_name or username
     :param guild: the server that the bot is connected to
-    :param nick_name: The nickname or username of the user to be timed out
+    :param given_name: The nickname or username of the user to be timed out
     :return: The individual member that matches the specified nick_name or username
     """
     members_list = guild.members
     matched_members = []
 
     for member in members_list:
-        if nick_name == member.nick and member.nick is not None:
+        if member.nick is not None and given_name == member.nick:
             matched_members.append(member)
-        elif nick_name == member.name:
+        elif given_name == member.name:
             matched_members.append(member)
 
     if len(matched_members) != 1:
-        unique_id = nick_name
-        member_obj = guild.get_member(unique_id)
+        given_unique_id = int(given_name)
+        member_obj = guild.get_member(given_unique_id)
 
-        if member_obj:
+        if member_obj is not None:
             return matched_members[0]
     else:
         return matched_members[0]
