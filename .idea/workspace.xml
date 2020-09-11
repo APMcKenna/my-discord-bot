@@ -45,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager">
     <configuration name="timeout_bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -122,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599667124339</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactored order of if statements and renamed variables to better represent their function.">
+      <created>1599749412349</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599749412349</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -146,41 +153,42 @@
     <MESSAGE value="Added Comments to Master" />
     <MESSAGE value="Refactoring code to make it more readable" />
     <MESSAGE value="Added new functions to simplify the program" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new functions to simplify the program" />
+    <MESSAGE value="Refactored order of if statements and renamed variables to better represent their function." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored order of if statements and renamed variables to better represent their function." />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2539" height="492" key="GridCell.Tab.0.bottom" timestamp="1599746791800">
+    <state width="2539" height="401" key="GridCell.Tab.0.bottom" timestamp="1599847331685">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="492" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599746791800" />
-    <state width="2539" height="492" key="GridCell.Tab.0.center" timestamp="1599746791799">
+    <state width="2539" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599847331685" />
+    <state width="2539" height="401" key="GridCell.Tab.0.center" timestamp="1599847331685">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="492" key="GridCell.Tab.0.center/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599746791799" />
-    <state width="2539" height="492" key="GridCell.Tab.0.left" timestamp="1599746791799">
+    <state width="2539" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599847331685" />
+    <state width="2539" height="401" key="GridCell.Tab.0.left" timestamp="1599847331684">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="492" key="GridCell.Tab.0.left/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599746791799" />
-    <state width="2539" height="492" key="GridCell.Tab.0.right" timestamp="1599746791800">
+    <state width="2539" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599847331684" />
+    <state width="2539" height="401" key="GridCell.Tab.0.right" timestamp="1599847331685">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="492" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599746791800" />
-    <state width="2539" height="492" key="GridCell.Tab.1.bottom" timestamp="1599746797428">
+    <state width="2539" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599847331685" />
+    <state width="2539" height="492" key="GridCell.Tab.1.bottom" timestamp="1599844249017">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599746797428" />
-    <state width="2539" height="492" key="GridCell.Tab.1.center" timestamp="1599746797428">
+    <state width="2539" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599844249017" />
+    <state width="2539" height="492" key="GridCell.Tab.1.center" timestamp="1599844249017">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="492" key="GridCell.Tab.1.center/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599746797428" />
-    <state width="2539" height="492" key="GridCell.Tab.1.left" timestamp="1599746797427">
+    <state width="2539" height="492" key="GridCell.Tab.1.center/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599844249017" />
+    <state width="2539" height="492" key="GridCell.Tab.1.left" timestamp="1599844249017">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="492" key="GridCell.Tab.1.left/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599746797427" />
-    <state width="2539" height="492" key="GridCell.Tab.1.right" timestamp="1599746797428">
+    <state width="2539" height="492" key="GridCell.Tab.1.left/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599844249017" />
+    <state width="2539" height="492" key="GridCell.Tab.1.right" timestamp="1599844249017">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="492" key="GridCell.Tab.1.right/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599746797428" />
+    <state width="2539" height="492" key="GridCell.Tab.1.right/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599844249017" />
     <state x="248" y="122" key="MergeDialog" timestamp="1599667191050">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -189,14 +197,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="918" y="461" key="MultipleFileMergeDialog/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599667195811" />
-    <state x="1056" y="314" key="SettingsEditor" timestamp="1599607721098">
+    <state x="1056" y="314" key="SettingsEditor" timestamp="1599764084714">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1056" y="314" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599607721098" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1599667215750">
+    <state x="1056" y="314" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599764084714" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1599749504195">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599667215750" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599749504195" />
     <state x="1089" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599609434533">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
