@@ -3,8 +3,11 @@
   - $timeout {user} {time(seconds)}
   - example:
     - $timeout example 5
+  - $timeout {user} {time(seconds)} {-d, --discriminator}
+  
  - The user arg can be the discord nickname or username
- - Ideally the user arg will be able to accept unique user ID however it does not at the moment
+ - The -d/--discriminator will be included if you wish to have the username and unique discriminator included
+ - e.g. "User1234#5665"
  
 # Changing the bot command symbol and token
  - To set the bot command symbol and token you must create a file named ".env" in the same directory as the python file
