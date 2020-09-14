@@ -19,14 +19,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff6950bb-eb0f-4868-99c8-4ea479fb7d28" name="Default Changelist" comment="Refactoring code to make it more readable">
+    <list default="true" id="ff6950bb-eb0f-4868-99c8-4ea479fb7d28" name="Default Changelist" comment="Changed the functions to be more simplified. Added an optional argument '-d' or '--discriminator' to use the username and discriminator to mute a user">
+      <change afterPath="$PROJECT_DIR$/discord_bot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discord_bot_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timeout/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timeout/timeout_bot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timeout/timeout_bot_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timeout_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/timeout_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timeout_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/timeout_bot.orig.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -47,8 +60,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager">
-    <configuration name="timeout_bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.discord_bot">
+    <configuration name="discord_bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="my-discord-bot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -60,7 +73,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/timeout_bot.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/discord_bot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="timeout_bot.orig" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="my-discord-bot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\piglet\Documents\GitHub\my-discord-bot\timeout_bot.orig.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -71,7 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.timeout_bot" />
+        <item itemvalue="Python.discord_bot" />
+        <item itemvalue="Python.timeout_bot.orig" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599749412349</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changed the functions to be more simplified. Added an optional argument '-d' or '--discriminator' to use the username and discriminator to mute a user">
+      <created>1599847770504</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1599847770504</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -154,25 +196,26 @@
     <MESSAGE value="Refactoring code to make it more readable" />
     <MESSAGE value="Added new functions to simplify the program" />
     <MESSAGE value="Refactored order of if statements and renamed variables to better represent their function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored order of if statements and renamed variables to better represent their function." />
+    <MESSAGE value="Changed the functions to be more simplified. Added an optional argument '-d' or '--discriminator' to use the username and discriminator to mute a user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the functions to be more simplified. Added an optional argument '-d' or '--discriminator' to use the username and discriminator to mute a user" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2539" height="401" key="GridCell.Tab.0.bottom" timestamp="1599847331685">
+    <state width="2539" height="401" key="GridCell.Tab.0.bottom" timestamp="1600044884277">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599847331685" />
-    <state width="2539" height="401" key="GridCell.Tab.0.center" timestamp="1599847331685">
+    <state width="2539" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1600044884277" />
+    <state width="2539" height="401" key="GridCell.Tab.0.center" timestamp="1600044884276">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599847331685" />
-    <state width="2539" height="401" key="GridCell.Tab.0.left" timestamp="1599847331684">
+    <state width="2539" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1600044884276" />
+    <state width="2539" height="401" key="GridCell.Tab.0.left" timestamp="1600044884276">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599847331684" />
-    <state width="2539" height="401" key="GridCell.Tab.0.right" timestamp="1599847331685">
+    <state width="2539" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1600044884276" />
+    <state width="2539" height="401" key="GridCell.Tab.0.right" timestamp="1600044884277">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599847331685" />
+    <state width="2539" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1600044884277" />
     <state width="2539" height="492" key="GridCell.Tab.1.bottom" timestamp="1599844249017">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -201,10 +244,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1056" y="314" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599764084714" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1599749504195">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1599847777856">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599749504195" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1599847777856" />
     <state x="1089" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599609434533">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
